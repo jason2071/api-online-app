@@ -5,7 +5,7 @@ const { login } = require("../controllers/login");
 
 router.post(
   "/",
-  body("username", "Please enter email").isEmail(),
+  body("email", "Please enter email").isEmail(),
   body(
     "password",
     "Please enter a password and a password of 6 digits or more."
