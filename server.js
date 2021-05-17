@@ -16,5 +16,6 @@ connectDB();
 
 app.get("/", (req, res) => res.send("API Running"));
 app.use("/api/v1/login", require("./routes/login"));
+app.use("/api/v1/product", require("./routes/product"));
 
 app.listen(port, () => console.log(`Server Running...`));
