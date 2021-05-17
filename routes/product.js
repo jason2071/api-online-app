@@ -17,7 +17,6 @@ router.post(
 router.post(
   "/edit",
   body("id", "ID is not empty").not().isEmpty(),
-  body("name", "Please enter product name").not().isEmpty(),
   editProduct
 );
 
